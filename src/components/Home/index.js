@@ -21,6 +21,7 @@ import {
   TaskText,
   TaskTag,
   NoTaskText,
+  NoTaskDiv,
 } from './styledComponents'
 
 const tagsList = [
@@ -78,7 +79,7 @@ class Home extends Component {
       this.setState(prevState => ({
         taskList: [...prevState.taskList, newTask],
         inputText: '',
-        inputTag: '',
+        inputTag: tagsList[0].optionId,
       }))
     }
   }
@@ -172,7 +173,9 @@ class Home extends Component {
         <MainHeading>Tasks</MainHeading>
         <TaskUl>
           {taskList.length === 0 ? (
-            <NoTaskText>No Tasks Added Yet</NoTaskText>
+            <NoTaskDiv>
+              <NoTaskText>No Tasks Added Yet</NoTaskText>
+            </NoTaskDiv>
           ) : (
             this.renderTaskCard()
           )}

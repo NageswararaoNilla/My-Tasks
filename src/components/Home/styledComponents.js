@@ -80,6 +80,7 @@ export const FormBtn = styled.button`
   height: 40px;
   width: 125px;
   border-radius: 10px;
+  cursor: pointer;
 `
 
 export const AddTaskDiv = styled.div`
@@ -119,6 +120,7 @@ export const TagBtn = styled.button`
   padding: 10px 15px;
   padding-left: 15px;
   padding-right: 15px;
+  cursor: pointer;
 `
 
 export const TaskUl = styled.ul`
@@ -126,7 +128,6 @@ export const TaskUl = styled.ul`
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  min-height: 100%;
   padding: 0px;
 `
 export const TaskListLi = styled.li`
@@ -155,6 +156,13 @@ export const TaskTag = styled.p`
   padding: 10px;
   padding-left: 15px;
   padding-right: 15px;
+`
+
+export const NoTaskDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 `
 
 export const NoTaskText = styled.p`
